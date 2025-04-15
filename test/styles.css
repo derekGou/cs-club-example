@@ -1,0 +1,31 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+    gap: 100px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+.absolute {
+    position: absolute;
+    transform: translateX(-100%);
+}
+#facetop {
+    z-index: 2;
+}
+#facebottom {
+    transform-origin: 40% 50%;
+    transition: transform 0.2s linear;
+}
+#hotDog {
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s linear;
+}
