@@ -2,7 +2,10 @@ var faceTop = document.getElementsByClassName("absolute")[0];
 var faceBottom = document.getElementsByClassName("absolute")[1];
 var hotDog = document.getElementById("hotDog");
 
+var button = document.getElementsByTagName("button")[0];
+
 function eat(){
+    button.disabled = true;
     faceBottom.style.transform = "translateX(-100%) rotateZ(-30deg)";
     setTimeout(function(){
         hotDog.style.transform = "translateX(-50%)"
@@ -22,6 +25,7 @@ function eat(){
             hotDog.style.transform = "";
             setTimeout(function(){
                 hotDog.style.transition = "all 0.3s linear";
+                button.disabled = false;
             }, 300)
         }, 300)
     }, 1500)
@@ -40,5 +44,4 @@ async function chomp(num){
     }
 }
 
-var button = document.getElementsByTagName("button")[0];
 button.onclick = eat;
