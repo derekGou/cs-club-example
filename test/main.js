@@ -15,7 +15,7 @@ function eat(){
         hotDog.style.scale = "0.6"
     }, 600)
     setTimeout(function(){
-        hotDog.style.transform = "translateX(-10%) translateY(-40%)"
+        hotDog.style.transform = "translateX(-30%) translateY(-40%)"
     }, 900)
     setTimeout(function(){
         hotDog.style.transition = "none";
